@@ -7,44 +7,89 @@
     <title>Restaurant</title>
     <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Gentium+Book+Basic|Lato|Open+Sans|Yeseva+One" rel="stylesheet">
     <link rel="stylesheet" href="css/main-style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <img src="images/header/gradient.png" class="gradient-picture" alt="gradient">
-        <img src="images/header/bg-header.jpg" alt="pasta" >
-        <a href="#" class="logo"><img src="images/header/logo.png" alt="logo"></a>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Igredients</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Reservations</a></li>
-            </ul>
-            <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><img src="images/header/youtube.png" alt="youtube" class="social-youtube"></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            </ul>   
-        </nav>
-    </header>
-    <main>
-        <section class="promo">
-            <h1>the right ingredients for the right food</h1>
-            <img src="images/section-promo/divider.png" class="divider" alt="divider">
-            <!-- <img src="images/bg-black-button.png" class="bg-black" alt="black bg"> -->
-            <a href="#" ><section class="button-book-a-table">
-               <span>BOOK A TABLE</span>
-            </section></a> 
-            <a href="#" ><section class="button-see-the-menu">
-                <span>SEE THE MENU</span>  
-            </section></a>
-        </section>
-        <section class="about">
-            <img src="images/section-about/bg-plus-pattern.png" alt="bg-about">
-        </section>
-    </main>
+    <div class="wrapper">
+        <header>
+            <img src="images/header/gradient.png" class="gradient-picture" alt="gradient">
+            <a href="#" class="logo"><img src="images/header/logo.png" alt="logo"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Igredients</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Reservations</a></li>
+                </ul>
+                <ul class="social-icons"> 
+                        <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li> 
+                        <li><a href="#" class="fa fa-youtube" aria-hidden="true"></a></li> 
+                        <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li> 
+                </ul>  
+            </nav>
+        </header>
+        <main>
+            <section class="promo">
+                <img class="bg-pasta" src="images/section-promo/bg-header.jpg" alt="pasta" >
+                <h1>the right ingredients for the right food</h1>
+                <img src="images/section-promo/divider.png" class="divider" alt="divider">
+                <a href="#" ><section class="button-book-a-table">
+                    <span>BOOK A TABLE</span>
+                </section></a> 
+                <a href="#" ><section class="button-see-the-menu">
+                    <span>SEE THE MENU</span>  
+                </section></a>
+            </section>
+            <section class="about">
+                <img src="images/section-about/bg-plus-pattern.png" alt="bg-about">
+                <h2>Just the right food</h2>
+                <img class="divider-about" src="images/section-about/divider.png" alt="divider">
+                <p>If you’ve been to one of our restaurants, you’ve seen – and
+                     tasted – what keeps our customers coming back for more.
+                     Perfect materials and freshly baked food, delicious Lambda
+                     cakes, &nbspmuffins, and gourmet coffees make us hard to resist!
+                     Stop in today and check us out!</p>
+                <img class="food" src="images/section-about/dish.png" alt="dish">
+                <img class="cook" src="images/section-about/cook.png" alt="cooker">
+            </section>
+            <section class="ingredients">
+                <img src="images/section-ingredients/bg-section-ingredients.jpg" alt="ingredients">
+                <img src="" alt="">
+                <article>
+                    <h2>Fine ingredients</h2>
+                    <img class="divider-ingredietns" src="images/section-ingredients/divider.png" alt="divider">
+                    <p>
+                        If you’ve been to one of our restaurants, you’ve seen – and 
+                        tasted – what keeps our customers coming back for more. 
+                        Perfect materials and freshly baked food, delicious Lambda 
+                        cakes, &nbspmuffins, and gourmet coffees make us hard to resist! 
+                        Stop in today and check us out!
+                    </p>
+                    <section class="images-for-article">
+                            <img src="images/section-ingredients/wheat.png" alt="wheat">
+                            <img src="images/section-ingredients/paper.png" alt="paper">
+                            <img src="images/section-ingredients/bread.png" alt="bread">
+                    </section>
+                </article>
+            </section>
+            <section class="menu">
+                <img src="images/section-menu/bg-menu.jpg" alt="bg-menu">
+                <section class="left-side-menu">
+                    <section class="upper-part-left-side-menu">
+                        <h2>Appetisers</h2>
+                        <img class ="divider" src="images/section-menu/divider.png" alt="divider">
+                        <h3>Tzatsiki <span class="prices">$3.99</span></h3>
+                        <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
+                        <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                    </section>
+                    <section class="lower-part-left-side-menu">
+
+                    </section>
+                </section>
+            </section>
+        </main>
+    </div>    
 </body>
 </html>
