@@ -143,14 +143,18 @@ main .promo > h1{
     justify-content: center;
     position: absolute;
     left: 556px;
-    top: 550px;
-    width: 227px;
-    height: 54px;
+    top: 552px;
+    width: 228px;
+    height: 57px;
     z-index: 2;
     opacity: 0.9;
     border: 1px solid rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.66);
 }
+
+
+  
+  
 
 .button-see-the-menu{
     display: flex;
@@ -160,9 +164,9 @@ main .promo > h1{
     justify-content: center;
     position: absolute;
     left: 815px;
-    top: 550px;
-    width: 226px;
-    height: 54px;
+    top: 552px;
+    width: 227px;
+    height: 57px;
     z-index: 2;
     border: 1px solid rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.27);
@@ -264,16 +268,13 @@ main > section > a:hover{
     line-height: 1.2;
     text-align: center;
     margin-top: 76px;
-    /* position: absolute;
-    left: 884.406px;
-    top: 1638.4px; */
     font-weight: normal;
 }
 
 .divider-ingredietns{
-    position: absolute;
-    top: 132px;
-    left: 161px;
+ 
+    padding-left: 161px;
+    padding-top: 15px;
 }
 
 .ingredients > article > p{
@@ -282,21 +283,59 @@ main > section > a:hover{
     color: rgb(255, 255, 255);
     line-height: 1.5;
     text-align: center;
-    position: absolute;
-    top: 180px;
-    left: 77px;
+    margin-left:77px;
+    margin-top: 20px;
     width: 415px;
     /* z-index: 228; */
 }
 
 .images-for-article{
+    margin-top: 67px;
+    margin-left: 88px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 369px;
-    left: 89.5px;
-    width: 390px;
+    width: 391px;
+    /* outline: 1px solid red; */
 }
+
+.wheat{
+   float: left;
+   border-radius: 50%;
+   overflow: hidden;
+   border: 5px solid rgba(34,35,36,0.8);
+}
+
+.wheat > img{
+    margin: -35px -135px -55px -50px; 
+}
+
+.paper{
+    float: left;
+    border-radius: 50%;
+    /* width: 300px;
+    height: 300px; */
+    overflow: hidden;
+    border: 5px solid rgba(34,35,36,0.8);
+
+ }
+ 
+ .paper > img{
+     margin: -95px -95px -25px -45px; 
+ }
+
+ .bread{
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(34,35,36,0.8);
+ }
+ 
+ .bread > img{
+     margin: -20px -60px -20px -50px; 
+ }
+ 
+
+
 
 /* style for section with class="menu" */
 
@@ -305,76 +344,180 @@ main > section > a:hover{
     margin: 0 auto;
     width: 1600px;
     height: 994px;
+    
+}
+
+.space-between-points{
+    margin-top: 35px;
+    margin-left: 13px;
 }
 
 .left-side-menu{
     position: absolute;
     top: 100px;
-    left: 280px;
-    width: 450px;
-    height: 850px;
-    outline: 1px solid red;
-}
-
-.upper-part-left-side-menu{
-    width: 450px;
-    height: 400px;
-    outline: 1px solid yellow;
-}
-
-.upper-part-left-side-menu > h2{
-    
-        font-size: 36px;
-        font-family: "Yeseva One";
-        line-height: 0.667;
-        color: rgb(204, 153, 0);
-        text-align: center;
-        font-weight: normal;
-        position: absolute;
-        top: 9px;
-        left: 122px;
+    left: 270px;
+    width: 500px;
+    height: 830px;
+    /* outline: 1px solid red; */
+    overflow: hidden;
     
 }
 
-.upper-part-left-side-menu > .divider{
-    position: absolute;
-    top: 55px;
-    left: 95px;
+.left-side-menu > .upper-part-menu{
+    width: 450px;
+    /* height: 380px; */
+    overflow: hidden;
+    /* outline: 1px solid yellow; */
+    
 }
 
-.upper-part-left-side-menu > h3{
+.left-side-menu > .upper-part-menu  > h2{
+    
+    font-size: 36px;
+    font-family: "Yeseva One";
+    line-height: 0.667;
+    color: rgb(204, 153, 0);
+    text-align: center;
+    font-weight: normal;
+    display: inline-block;
+    padding-left: 132px;
+    padding-top: 9px;
+    
+}
+
+ .upper-part-menu >  img{
+    padding-top: 19px;
+    padding-left: 106px; 
+}
+
+.point-of-menu-one{
+
+    margin-top: 23px;
+    margin-left: 13px;
+}
+
+.menu > h3{
     font-family: "Yeseva One";
     font-size: 21px;
     color: rgb(204, 153, 0);
-    position: absolute;
-    top: 107px;
-    left: 3px;    
     width: 432px;
     font-weight: normal;
-    /* outline: 1px solid black; */
 }
 
 .prices{
     float: right;
 }
 
-.upper-part-left-side-menu > p{
+ .menu p{
     font-family: "Lato";
     font-size: 16px;
     color: rgb(76, 76, 76);
-    position: absolute;
-    top: 150px;
-    left: 3px;    
     font-weight: normal;
+}
+.line{
+    padding-left: 3px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+.menu h3{
+    font-family: "Yeseva One";
+    font-size: 21px;
+    word-spacing: 1.4px;
+    color: rgb(204, 153, 0);
+    width: 432px;
+    font-weight: normal
+}
+
+
+  
+ .lower-part-menu{
+    width: 450px;
+    margin-top: 63px;
     /* outline: 1px solid black; */
 }
 
-.line{
-    position: absolute;
-    top: 140px;
-    left: 3px;  
+.left-side-menu > .lower-part-menu > h2{
+    font-size: 36px;
+    font-family: "Yeseva One";
+    line-height: 0.667;
+    color: rgb(204, 153, 0);
+    text-align: center;
+    font-weight: normal;
+    display: inline-block;
+    padding-left: 170px;
+    padding-top: 9px;
 }
 
-  
-  
+.left-side-menu > .lower-part-menu > img{
+    padding-top: 19px;
+    padding-left: 106px; 
+}
+
+.left-side-menu > .special {
+    position: absolute;
+    top: 608px;
+    left: 1px;
+}
+
+
+.right-side-menu{
+    position: absolute;
+    top: 100px;
+    left: 870px;
+    width: 470px;
+    height: 830px;
+    /* outline: 1px solid red; */
+    overflow: hidden;
+}
+
+
+.right-side-menu > .upper-part-menu  > h2{
+    
+    font-size: 36px;
+    font-family: "Yeseva One";
+    line-height: 0.667;
+    color: rgb(204, 153, 0);
+    text-align: center;
+    font-weight: normal;
+    display: inline-block;
+    padding-left: 154px;
+    padding-top: 9px;
+    
+}
+
+.right-side-menu > .lower-part-menu > .point-of-menu-one{
+    margin-top: 22px;
+}
+
+.right-side-menu > .lower-part-menu > h2{
+    font-size: 36px;
+    font-family: "Yeseva One";
+    line-height: 0.667;
+    color: rgb(204, 153, 0);
+    text-align: center;
+    font-weight: normal;
+    display: inline-block;
+    padding-left: 117px;
+    padding-top: 9px;
+}
+
+.right-side-menu > .lower-part-menu > img{
+    padding-top: 19px;
+    padding-left: 106px; 
+}
+
+.right-side-menu > .special {
+    position: absolute;
+    top: 510px;
+    left: 1px;
+}
+
+
+/* style for section-reviews */
 
