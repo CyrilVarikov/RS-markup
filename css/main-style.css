@@ -1,8 +1,10 @@
 *{
     margin: 0px;
     box-sizing: border-box;
-    /* padding: 0px; */
 }
+
+
+
 
 .wrapper {
     background-image: url(../images/bg-pattern.jpg);
@@ -10,12 +12,17 @@
     opacity: 0.993;
     margin: 0 auto;
     position: relative;
-    height: 5000px;
-    width: 1600px;
+    /* height: 5000px;
+    width: 1600px; */
+    min-height: calc(100vh - 320px);
 }
 
 a{
     text-decoration: none;
+}
+
+footer{
+    margin: 0 auto;
 }
 
 header{
@@ -74,7 +81,7 @@ header{
     font-size: 19px;
     font-family: "Gentium Book Basic";
     font-weight: normal;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.23px;
 }
 
 .social-icons{
@@ -87,7 +94,7 @@ header{
 
 .social-icons li{
     display: inline;
-    margin: 6px;
+    margin: 5.5px;
 }
 
 .social-icons a{
@@ -618,9 +625,9 @@ blockquote:before {
 
 .reservations > article {
     position: absolute;
-    top: 104px;
-    right: 250px;
-    outline: 1px solid red;
+    top: 105px;
+    right: 170px;
+    /* outline: 1px solid red; */
     width: 500px;
 }
 
@@ -651,11 +658,225 @@ blockquote:before {
 }
   
 .reservations > article > .lower-paragraph {
-    margin-top: 11.5px;
-    margin-left: 34px;   
+    margin-top: 10px;
+    margin-left: 36px;   
+    line-height: 1.55;
     width: 430px;
 }
 
+.booking-form{
+    position: absolute;
+    top: 395px;
+    right: 75px;
+    /* outline: 1px solid red; */
+    width: 600px;
+}
+
+/* .fa-calendar{
+    position: absolute;
+    top: 120px;
+    left: 220px;
+    color: rgb(124, 124, 124);
+} */
+
+.booking-form  .date::-webkit-calendar-picker-indicator {
+    color: rgba(0,0,0,0);
+    opacity: 0;    
+}
+
+.booking-form  .date::-webkit-inner-spin-button,
+.booking-form .date::-webkit-clear-button {
+  display: none; 
+}
+
+.booking-form  .date::-webkit-calendar-picker-indicator:hover {
+    background: transparent;
+    cursor: pointer;
+  }
+
+.booking-form > ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.booking-form > .left-ul {
+    float: left;
+    margin-left: 40.5px;
+}
+
+.booking-form > .right-ul {
+    float: right;
+    margin-right: 129px;
+}
+
+
+.booking-form > ul label{
+    padding: 0;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(201, 161, 49);
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.lower-label{
+    margin-top: 18px;
+}
+
+.booking-form > ul li {
+    margin-bottom: 6px;
+    /* margin-top: 20px; */
+}
+
+:-moz-placeholder {
+    padding-left: 14px;
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: rgb(124, 124, 124);
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;
+}
+
+::-webkit-input-placeholder {
+    
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: rgb(124, 124, 124);
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;
+    padding-left: 14px;
+    word-spacing: -0.5px;
+    /* margin-left: 15px; */
+}
+
+*:focus {
+    outline: none;
+}
+
+.booking-form input{
+    border: 1px solid rgb(200,198,198);
+    height: 36px;
+    width: 200px;
+    
+}
+
+.booking-form ul .party-number{
+    background-image: url(../images/section-reservations/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 176px 10px;
+}
+
+.booking-form ul .date {
+    background-image: url(../images/section-reservations/calendar.png);
+    background-repeat: no-repeat;
+    background-position: 174px 7px;
+}
+
+.booking-form ul input{
+    background: rgba(255, 255, 255, 0.4); 
+}
+.booking-form input:focus{
+    border: 1px solid rgb(200, 159, 45);
+}
+
+.booking-form .button { 
+    margin: 26px auto 0 157px; 
+    font-family: "OpenSans";
+    background: rgb(200, 159, 45); 
+    color: rgb(255,255,255); 
+    font-size: 17px;
+    word-spacing: 2.4px;
+}
+  
+  
+
+  /* Style for footer */
+
 footer{
     margin: 0 auto;
+    position: relative;
 }
+
+footer > .about-us{
+    position: absolute;
+    top: 57px;
+    left: 215px;
+    /* outline: 1px solid red; */
+    width: 370px;
+}
+
+footer h2{
+    font-size: 21px;
+    font-family: "Yeseva One";
+    color: rgb(254, 254, 254);
+    line-height: 1.143;
+    text-align: center;      
+}
+
+footer .footer-divider{
+    margin-left: 84px;
+    margin-top: 16px;
+    margin-bottom: 14px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 16px; 
+    color: rgb(254, 254, 254);
+    font-family: "Open Sans";
+    text-align: center; 
+    line-height: 24px; 
+}
+
+footer > .opening-hours{
+    position: absolute;
+    top: 57px;
+    left: 615px;
+    width: 370px;
+}
+
+.opening-hours > p{
+    letter-spacing: -0.15px;
+    word-spacing: 2px;
+    /* margin-left: 15px; */
+}
+
+.opening-hours ul{
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+footer  i{
+    color: rgb(254, 254, 254);
+    margin-left: 9px;
+}
+
+.location h2{
+    letter-spacing: 1px;
+}
+
+.opening-hours p{
+    letter-spacing: 0.15px;
+}
+
+footer .location {
+    position: absolute;
+    top: 57px;
+    left: 1018px;
+    width: 370px;
+}
+
+.location ul{
+    margin-top: 50px;
+    margin-left: 92px; 
+}
+
+.location p{
+    letter-spacing: 0.7px;
+    word-spacing: 0.9px;
+}
+

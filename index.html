@@ -24,9 +24,9 @@
                     <li><a href="#">Reservations</a></li>
                 </ul>
                 <ul class="social-icons"> 
-                        <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li> 
-                        <li><a href="#" class="fa fa-youtube" aria-hidden="true"></a></li> 
-                        <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li> 
+                    <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li> 
+                    <li><a href="#" class="fa fa-youtube" aria-hidden="true"></a></li> 
+                    <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li> 
                 </ul>  
             </nav>
         </header>
@@ -75,7 +75,6 @@
                 </article>
             </section>
             <section class="menu">
-                
                 <img src="images/section-menu/bg-menu.jpg" alt="bg-menu">
                 <section class="left-side-menu">
                     <img class="special" src="images/section-menu/border-for-special-delicious.png" alt="special-food">
@@ -115,8 +114,7 @@
                             <h3>Gusto Salad <span class="prices">$5.25</span></h3>
                             <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                             <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
-                        </section>   
-                                                
+                        </section>                            
                     </section>
                 </section>
                 <section class="right-side-menu">
@@ -133,9 +131,7 @@
                             <h3>Spinach Pie <span class="prices">$5.50</span></h3>
                             <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                             <p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
-                        </section>
-                        
-                        
+                        </section>                         
                     </section>
                     <section class="lower-part-menu">
                         <h2>Main Dishes</h2>
@@ -159,8 +155,7 @@
                             <h3>Pastitsio <span class="prices">$5.99</span></h3>
                             <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                             <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
-                        </section>   
-                                                                                            
+                        </section>                                                                                              
                     </section>
                 </section>
             </section>
@@ -193,11 +188,77 @@
                         us hard to resist! Stop in today and check us out! Perfect 
                         materials and freshly baked food.</p>
                 </article>
+                <form action="" class="booking-form">
+                    <ul class="left-ul">
+                        <li>
+                            <label for="name">Name</label>
+                        </li>
+                        <li>
+                            <input type="text" name="name" placeholder="your name *" required>
+                        </li>
+                        <li>
+                            <label class="lower-label" for="date">Date</label>
+                        </li>
+                        <li>
+                            <!-- <i class="fa fa-calendar" aria-hidden="true"></i> -->
+                            <input placeholder="date *" class="date"  type="text" onfocus="(this.type='date')" name="date" required>
+                        </li>
+                    </ul>
+                    <ul class="right-ul">
+                        <li>
+                            <label for="email">Email</label>
+                        </li>
+                        <li>
+                            <input type="email" name="email" placeholder="your email *" required>
+                        </li>
+                        <li>
+                            <label class="lower-label" for="party">Party number</label>
+                        </li>
+                        <li>
+                            <input class="party-number" type="number" name="party" placeholder="party number" min="1" max="20">
+                        </li>
+                    </ul>
+                    <input type="submit" value="Book now!" class="button">
+                </form>
             </section>
         </main>
+    </div> 
         <footer>
             <img src="images/footer/bg-footer.jpg" alt="bg-footer">
-        </footer>
-    </div>    
+            <section class="about-us">
+                <h2>About Us</h2>
+                <img class="footer-divider" src="images/footer/divider.png" alt="divider">
+                <p>
+                    Lambda's new and expanded Chelsea location 
+                    represents a truly authentic <b>Greek</b> patisserie, featuring 
+                    breakfasts of fresh croissants and steaming bowls of café.
+                </p>
+                <p>Lamda the best restaurant in town</p>    
+            </section>
+            <section class="opening-hours">
+                <h2>Opening Hours</h2>
+                <img class="footer-divider" src="images/footer/divider.png" alt="divider">
+                <p><b>Mon-Thu:</b> 7:00am-8:00pm</p>
+                <p><b>Fri-Sun:</b> 7:00am-10:00pm</p>  
+                <ul class="card"> 
+                    <i class="fa fa-cc-amex" aria-hidden="true"></i>
+                    <i class="fa fa-cc-paypal" aria-hidden="true"></i> 
+                    <i class="fa fa-cc-visa" aria-hidden="true"></i> 
+                    <i class="fa fa-cc-discover" aria-hidden="true"></i> 
+                </ul> 
+            </section>
+            <section class="location">
+                <h2>Our location</h2>
+                <img class="footer-divider" src="images/footer/divider.png" alt="divider">
+                <p><b>19th Paradise Street Sitia</b></p>
+                <p><b>128 Meserole Avenue</b></p>  
+                <ul class="icons"> 
+                    <i class="fa fa-facebook" aria-hidden="true"></i> 
+                    <i class="fa fa-youtube" aria-hidden="true"></i> 
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-trello" aria-hidden="true"></i>
+                </ul> 
+            </section>
+        </footer>   
 </body>
 </html>
