@@ -53,8 +53,8 @@ header{
     padding: 0;
     list-style-type: none;
     position: absolute;
-    left: 551.5px;
-    top: 49px;
+    left: 550px;
+    top: 49.5px;
     z-index: 2;
     /* outline: 2px solid green; */
     
@@ -121,7 +121,7 @@ main .promo > h1{
     text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
     position: absolute;
     left: 250px;
-    top: 212px;
+    top: 213px;
     width: 1100px;
     height: 204px;
     z-index: 2;
@@ -284,7 +284,7 @@ main > section > a:hover{
     line-height: 1.5;
     text-align: center;
     margin-left:77px;
-    margin-top: 20px;
+    margin-top: 19px;
     width: 415px;
     /* z-index: 228; */
 }
@@ -298,15 +298,16 @@ main > section > a:hover{
     /* outline: 1px solid red; */
 }
 
+
 .wheat{
    float: left;
    border-radius: 50%;
    overflow: hidden;
-   border: 5px solid rgba(34,35,36,0.8);
+   border: 5px solid rgba(84, 87, 87, 0.3);
 }
 
 .wheat > img{
-    margin: -35px -135px -55px -50px; 
+    margin: -37px -137px -57px -50px; 
 }
 
 .paper{
@@ -315,23 +316,23 @@ main > section > a:hover{
     /* width: 300px;
     height: 300px; */
     overflow: hidden;
-    border: 5px solid rgba(34,35,36,0.8);
+    border: 5px solid rgba(84, 87, 87, 0.3);
 
  }
  
  .paper > img{
-     margin: -95px -95px -25px -45px; 
+     margin: -93px -97px -29px -45px; 
  }
 
  .bread{
     float: left;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid rgba(34,35,36,0.8);
+    border: 5px solid rgba(84, 87, 87, 0.3);
  }
  
  .bread > img{
-     margin: -20px -60px -20px -50px; 
+     margin: -20px -60px -22px -50px; 
  }
  
 
@@ -348,7 +349,7 @@ main > section > a:hover{
 }
 
 .space-between-points{
-    margin-top: 35px;
+    margin-top: 37px;
     margin-left: 13px;
 }
 
@@ -396,13 +397,13 @@ main > section > a:hover{
     margin-left: 13px;
 }
 
-.menu > h3{
+/* .menu > h3{
     font-family: "Yeseva One";
     font-size: 21px;
     color: rgb(204, 153, 0);
     width: 432px;
     font-weight: normal;
-}
+} */
 
 .prices{
     float: right;
@@ -413,6 +414,7 @@ main > section > a:hover{
     font-size: 16px;
     color: rgb(76, 76, 76);
     font-weight: normal;
+    margin-top: 0.4px;
 }
 .line{
     padding-left: 3px;
@@ -518,6 +520,142 @@ main > section > a:hover{
     left: 1px;
 }
 
+.right-side-menu > .lower-part-menu > .point-of-menu-one > p{
+    margin-top: 1.5px;
+}
+
 
 /* style for section-reviews */
 
+.reviews{
+    position: relative;
+    margin: 0 auto;
+    width: 1600px;
+    height: 758px;
+}
+
+.reviews > article{
+    position: absolute;
+    top: 101px;
+    left: 416px;
+    width: 769px;
+    height: 557px;
+    background-color: rgba(0, 0, 0, 0.65);
+    /* outline: 1px solid red */
+}
+
+
+  
+
+.reviews > article > h2{
+    font-size: 36px;
+    font-family: "Yeseva One";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin: 74px auto 0 auto;
+    font-weight: normal;
+}
+
+.reviews > article > img{
+    margin: 15px auto 0 262px;
+}
+
+
+
+blockquote {
+    font-size: 25px;
+    font-family: "Gentium Book Basic";
+    color: rgb(221, 224, 223);
+    font-weight: normal;
+    line-height: 1.813334;
+    text-align: center;
+    letter-spacing: 0.55px;
+    word-spacing: 1px;
+    margin-top: 15px;
+    margin-left: 71.5px;
+    width: 627px;   
+}
+ 
+blockquote:before {
+    content: "\201C";
+    font-size: 96px;
+    font-family: "Georgia";
+    color: rgba(242, 244, 244, 0.471);
+    position: absolute;
+    top: 121px;
+    left: 27px;
+
+}
+
+.reviews article > .place{
+    margin-left: 304.5px;
+    margin-top: 33px;
+    font-size: 18px;
+    font-family: "Lato";
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+
+}
+
+
+/* style for section-reservations */
+
+.reservations{
+    position: relative;
+    margin: 0 auto;
+    height: 710px;
+}
+
+.reservations > .pic-for-reservations {
+    position: absolute;
+    top: 100px;
+    left: 215px;
+    display: flex;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.reservations > article {
+    position: absolute;
+    top: 104px;
+    right: 250px;
+    outline: 1px solid red;
+    width: 500px;
+}
+
+.reservations > article > h2{
+    font-size: 36px;
+    font-family: "Yeseva One";
+    color: rgb(204, 153, 0);
+    line-height: 0.667;
+    text-align: center;
+    font-weight: normal;
+}
+
+.reservations > article > img{
+    margin-top: 24px;
+    margin-left: 125px;
+    margin-bottom: 20px;
+}
+
+.reservations > article > p{
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(76, 76, 76);
+    line-height: 1.5;
+    text-align: center; 
+    width: 440px;   
+    margin-left: 30px;
+    /* margin-top: 15px; */
+}
+  
+.reservations > article > .lower-paragraph {
+    margin-top: 11.5px;
+    margin-left: 34px;   
+    width: 430px;
+}
+
+footer{
+    margin: 0 auto;
+}
