@@ -1,106 +1,112 @@
 *{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: url(../images/bg-pat.png);
-}
-
-
-.wrapper {
-    background-image: url(../images/bg-pattern.jpg);
-    z-index: 20;
-    opacity: 0.993;
+.wrapper{
     margin: 0 auto;
-    position: relative;
-    /* height: 5000px;*/
-    width: 1600px; 
+    width: 1600px;
     min-height: calc(100vh - 320px);
 }
 
-a{
+@font-face { 
+    font-family: "GenBasB"; 
+    src: local("GebBasB"), url('../fonts/GenBasB.ttf'); 
+} 
+
+@font-face { 
+    font-family: "YesevaOne-Regular_v2"; 
+    src: local("YesevaOne-Regular_v2"),url('../fonts/YesevaOne-Regular_v2.otf'); 
+} 
+
+@font-face { 
+    font-family: "Lato-Regular"; 
+    src: local("Lato-Regular"), url('../fonts/Lato-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: "open-sans.bold"; 
+    src: local("open-sans.bold"), url('../fonts/OpenSans-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: "open-sans.regular"; 
+    src: local("open-sans.regular"), url('../fonts/OpenSans-Regular.ttf'); 
+} 
+
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
     text-decoration: none;
 }
 
-footer{
-    margin: 0 auto;
-    width: 1600px;
-}
 
 header{
     width: 1600px;
     height: 750px;
-    margin: 0 auto;
-    /* position: relative; */
+    background:  url(../images/header/gradient.png) top center , url(../images/header/bg-header.jpg) top center;
+    background-repeat: no-repeat;
 }
 
-
-.gradient-picture{
-   position: absolute;
-   top: 0px;
-   left: 0px;
-   z-index: 2;
-}
-
-.logo{   
-    position: absolute;
-    left: 179px;
-    top: 46.901px;
-    z-index: 2;
-    text-decoration: none;
+.logo{
+    float: left;
+    margin: 47px 0 0 178px;
 }
 
 .logo:hover{
-    /* background: rgba(209, 209, 209,0.2); */
-    opacity: 0.7;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
+nav {
+    display: flex;
+    margin: 49px 216px 0 0;
+    float: right;
+}
 
-
-.navigation{
-    margin: 0;
+nav ul:first-child{
     padding: 0;
     list-style-type: none;
-    position: absolute;
-    left: 550px;
-    top: 49.5px;
-    z-index: 2;
-    /* outline: 2px solid green; */
-    
 }
 
-.navigation a:hover{
+nav ul:first-child a:hover{
     color:rgba(209, 209, 209,0.8);
 }
 
-.navigation a{
-    color: rgb(255, 255, 255);
-    
+nav ul:first-child a{
+    color: rgb(255, 255, 255); 
 }
-.navigation li{
+
+nav ul:first-child li{
     display: inline;
-    margin: 24.8px;
-    font-size: 19px;
-    font-family: "Gentium Book Basic";
+    font-size: 21px;
+    font-family: "GenBasB"; 
     font-weight: normal;
-    letter-spacing: 1.23px;
+    margin: 24.8px;
+    letter-spacing: -0.15px;
 }
 
-.social-icons{
-    position: absolute;
-    left: 1260px;
-    top: 50px;
+nav ul:first-child li:last-child{
+    margin-right: 12px;
+}
+
+
+nav ul:last-child{
     list-style-type: none;
-    z-index: 2;
 }
 
-.social-icons li{
+nav ul:last-child li{
     display: inline;
-    margin: 5.5px;
+    margin: 0 0 0 11px;
 }
 
-.social-icons a{
+nav ul:last-child a{
     font-size: 21px;
     color: rgb(218, 179, 62);
 }
@@ -109,173 +115,126 @@ header{
     color: rgba(212, 193, 136, 0.8);
 }
 
-
-
-
-.bg-pasta{
-    position: absolute;
-    top: 0px;
-    left: 0px;
+.promo{
+    margin: 136px auto;
+    background: url(../images/header/divider.png) 436px 261px no-repeat;
+    width: 1100px;
+    height: 400px;
 }
 
-
-
-main .promo > h1{
+.promo > h1{
     font-size: 90px;
-    font-family: "Yeseva One";
+    font-family: "YesevaOne-Regular_v2";
     color: rgba(255, 255, 255, 0.922);
-    font-weight: normal;
     line-height: 1.32;
     text-align: center;
     font-weight: normal;
-    text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
-    position: absolute;
-    left: 250px;
-    top: 213px;
+    text-shadow: 0 1px 2px rgba(1, 1, 1, 0.64);
     width: 1100px;
-    height: 204px;
-    z-index: 2;
 }
 
-.divider{
-    position: absolute;
-    top: 474px;
-    left: 688px;
-    z-index: 2;
-}
-
-.button-book-a-table{
-    /* display: inline-block; */
-    display: flex;
-    font-size: 18px;
-    font-family: "Lato";
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 556px;
-    top: 552px;
+.promo a{
+    color: rgb(255, 255, 255);
+    text-align: center;
     width: 228px;
     height: 57px;
-    z-index: 2;
     opacity: 0.9;
+    line-height: 55px;
+    display: block;
+    font-size: 18px;
+    font-family: "Lato-Regular";
+    margin-top: 102px;
+}
+.promo a:hover{
+    opacity: 0.7;
+}
+
+
+.button-book-a-table{
+    float: left;
     border: 1px solid rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.66);
+    margin-left: 306px;
 }
-
-
-  
-  
 
 .button-see-the-menu{
-    display: flex;
-    font-size: 18px;
-    font-family: "Lato";
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 815px;
-    top: 552px;
-    width: 227px;
-    height: 57px;
-    z-index: 2;
+    float: right;
     border: 1px solid rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.27);
-    opacity: 0.9;
+    margin-right: 308px;
 }
 
-main > section > a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
 
-main > section > a:hover{
-    color:rgba(209, 209, 209,0.8);
-}
-
-/* section-promo-about */
+/* start style for section-about */
 
 .about {
     width: 1600px;
     height: 710px;
-    margin: 0 auto;
-    position: relative;
+    background:  url(../images/section-about/bg-pat.png), url(../images/section-about/bg-shadow.png);
+}
+
+.about article {
+    float: left;
+    margin: 100px 0 0 200px;
+    width: 510px;
+    height: 500px;
+    background: url(../images/section-about/divider.png) 175px 55px no-repeat;
 }
 
 .about article h2{
     font-size: 36px;
-    font-family: "Yeseva One";
+    font-family: "YesevaOne-Regular_v2";
     color: rgb(204, 153, 0);
     line-height: 0.667;
-    text-align: center;
     font-weight: normal;
-    margin-left: 89px;
-    margin-top: 8px
+    margin: 8px 0 0 128px;
 }
 
-.divider-about{
-    margin-top: 24px;
-    margin-left: 174px;
+.about article img{
+    margin: 55px 0 0 225px;
 }
 
-.about article {
-    position: absolute;
-    top: 100px;
-    left: 200px;
-    /* width: 550px; */
-    height: 230px;
-    overflow: hidden;
-}
+
 
 .about article p{
     font-size: 16px;
-    font-family: "Lato";
+    font-family: "Lato-Regular";
     color: rgb(76, 76, 76);
     line-height: 1.5;
     text-align: center;
-    width: 415px;
-    height: 111px;
-    margin-left: 92px;
-    margin-top: 20px;
-    
+    width: 416px;
+    height: 115px;
+    margin-left: 93px;
+    margin-top: 73px;   
+    overflow: hidden;
 }
 
-.food {
-    position: absolute;
-    top: 55px;
-    left: 739px;
+.about > img{
+    float: right;
+    margin: 55px 240px 0 0;
 }
 
-.cook{
-    position: absolute;
-    top: 375px;
-    left: 425px;
-    z-index: 2;
-}
-  
-/* section ingredients */
+
+/* start styles for section-ingredients */
 
 .ingredients{
-    position: relative;
-    margin: 0 auto;
+    display: flex;
     width: 1600px;
     height: 758px;
+    background: url(../images/section-ingredients/bg-section-ingredients.jpg) top center no-repeat;
 }
 
 .ingredients > article{
-    position: absolute; 
-    top: 100px;
-    left: 816px;
+    margin: 100px 0 0 815px;
     width: 570px;
     height: 557px;
+    background: url(../images/section-ingredients/divider.png) 162px 133px no-repeat;
     background-color: rgba(0, 0, 0, 0.65);
 }
 
-
-  
-
 .ingredients > article > h2{
     font-size: 36px;
-    font-family: "Yeseva One";
+    font-family: "YesevaOne-Regular_v2";
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
@@ -283,26 +242,21 @@ main > section > a:hover{
     font-weight: normal;
 }
 
-.divider-ingredietns{
- 
-    padding-left: 161px;
-    padding-top: 15px;
-}
 
 .ingredients > article > p{
     font-size: 16px;
-    font-family: "Lato";
+    font-family: "Lato-Regular";
     color: rgb(255, 255, 255);
     line-height: 1.5;
+    word-spacing: -0.7px;
     text-align: center;
-    margin-left:77px;
-    margin-top: 19px;
-    width: 415px;
+    margin: 63px 0 0 79px;
+    width: 416px;
     height: 120px;
     overflow: hidden;
 }
 
-.images-for-article{
+.ingredients > article > figure{
     margin-top: 67px;
     margin-left: 88px;
     display: flex;
@@ -325,8 +279,6 @@ main > section > a:hover{
 .paper{
     float: left;
     border-radius: 50%;
-    /* width: 300px;
-    height: 300px; */
     overflow: hidden;
     border: 5px solid rgba(84, 87, 87, 0.3);
 
@@ -346,391 +298,288 @@ main > section > a:hover{
  .bread > img{
      margin: -20px -60px -22px -50px; 
  }
- 
 
+ /* start the style for menu */
 
+ .menu{
+     display: flex;
+     width: 1600px;
+     height: 994px;
+     background: url(../images/section-menu/bg-pattern.png), url(../images/section-menu/bg-shadow.png);
+ }
 
-/* style for section with class="menu" */
-
-.menu{
-    position: relative;
-    margin: 0 auto;
-    width: 1600px;
-    height: 994px;
-}
-
-.content-menu{
-    overflow: hidden;
-    position: absolute;
-    top: 100px;
-    left: 200px;
-    height: 800px;
+ .content-menu{
+    margin: 100px 0 0 200px;
     width: 1200px;
 }
 
-.space-between-points{
-    margin-top: 37px;
-    margin-left: 13px;
-}
-
-.left-side-menu{
-    position: absolute;
-    left: 70px;
+.content-menu > section{
+    position: relative;
     width: 500px;
     height: 830px;
     overflow: hidden;
-    
 }
 
-.left-side-menu > .upper-part-menu{
-    width: 450px;
-    overflow: hidden;   
+.content-menu > section:first-child{
+    margin: 0 0 0 50px;
+    float: left;
+    background: url("../images/section-menu/border-for-special-delicious.png") 22px 608px no-repeat;
+
 }
 
-.left-side-menu > .upper-part-menu  > h2{
-    
+.content-menu > section:last-child{
+    float: right;
+    margin: 0 50px 0 0;
+    background: url("../images/section-menu/border-for-special-delicious.png") 22px 508px no-repeat;
+
+}
+
+.content-menu > section > section{
+    overflow: hidden;  
+    margin: 0 0 0 20px;
+    background: url(../images/section-menu/divider.png) 105px 55px no-repeat;
+}
+
+.content-menu > section h2{
     font-size: 36px;
-    font-family: "Yeseva One";
+    font-family: "YesevaOne-Regular_v2";
     line-height: 0.667;
     color: rgb(204, 153, 0);
     text-align: center;
     font-weight: normal;
     display: inline-block;
-    padding-left: 132px;
-    padding-top: 9px;
     
 }
 
- .upper-part-menu >  img{
-    padding-top: 19px;
-    padding-left: 106px; 
+.content-menu > section:first-child .upper-part-menu h2{
+    padding-left: 132px;
+    padding-top: 9px;   
+    margin-bottom: 37px;
 }
 
-.point-of-menu-one{
 
-    margin-top: 23px;
-    margin-left: 13px;
-}
 
 
 .prices{
     float: right;
 }
 
- .menu p{
-    font-family: "Lato";
+.menu p{
+    font-family: "Lato-Regular";
     font-size: 16px;
     color: rgb(76, 76, 76);
     font-weight: normal;
-    margin-top: 0.4px;
+    margin-top: 8px;
 }
-.line{
-    padding-left: 3px;
-    margin-bottom: 5px;
-}
-
-
-
-
-
 
 
 .menu h3{
-    font-family: "Yeseva One";
+    font-family: "YesevaOne-Regular_v2";
     font-size: 21px;
     word-spacing: 1.4px;
     color: rgb(204, 153, 0);
     width: 432px;
-    font-weight: normal
-}
-
-
-  
- .lower-part-menu{
-    width: 450px;
-    margin-top: 63px;
-    /* outline: 1px solid black; */
-}
-
-.left-side-menu > .lower-part-menu > h2{
-    font-size: 36px;
-    font-family: "Yeseva One";
-    line-height: 0.667;
-    color: rgb(204, 153, 0);
-    text-align: center;
     font-weight: normal;
-    display: inline-block;
-    padding-left: 170px;
-    padding-top: 9px;
+    margin: 30px 0 0 1px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(204, 153, 0);
+
 }
 
-.left-side-menu > .lower-part-menu > img{
-    padding-top: 19px;
-    padding-left: 106px; 
+.space-between-points{
+    margin: 37px 0 0 13px;
 }
 
-.left-side-menu > .special {
-    position: absolute;
-    top: 608px;
-    left: 1px;
-}
-
-
-.right-side-menu{
-    position: absolute;
-    /* top: 100px; */
-    left: 670px;
-    width: 470px;
-    height: 830px;
-    /* outline: 1px solid red; */
-    overflow: hidden;
+.content-menu > section:first-child .lower-part-menu{
+    margin: 69px 0 0 20px;
+    background-position: 105px 49px;
 }
 
 
-.right-side-menu > .upper-part-menu  > h2{
-    
-    font-size: 36px;
-    font-family: "Yeseva One";
-    line-height: 0.667;
-    color: rgb(204, 153, 0);
-    text-align: center;
-    font-weight: normal;
-    display: inline-block;
-    padding-left: 154px;
-    padding-top: 9px;
-    
-}
-
-.right-side-menu > .lower-part-menu > .point-of-menu-one{
-    margin-top: 22px;
-}
-
-.right-side-menu > .lower-part-menu > h2{
-    font-size: 36px;
-    font-family: "Yeseva One";
-    line-height: 0.667;
-    color: rgb(204, 153, 0);
-    text-align: center;
-    font-weight: normal;
-    display: inline-block;
-    padding-left: 117px;
-    padding-top: 9px;
-}
-
-.right-side-menu > .lower-part-menu > img{
-    padding-top: 19px;
-    padding-left: 106px; 
-}
-
-.right-side-menu > .special {
-    position: absolute;
-    top: 510px;
-    left: 1px;
-}
-
-.right-side-menu > .lower-part-menu > .point-of-menu-one > p{
-    margin-top: 1.5px;
+.content-menu > section:first-child .lower-part-menu h2{
+    padding: 2px 0 0 170px;
+    margin-bottom: 37px;
 }
 
 
-/* style for section-reviews */
+.content-menu > section:last-child .upper-part-menu h2{
+    padding-left: 152px;
+    padding-top: 9px;   
+    margin-bottom: 37px;
+}
+
+.content-menu > section:last-child .lower-part-menu{
+    margin: 69px 0 0 20px;
+    background-position: 105px 49px;
+}
+
+.content-menu > section:last-child .lower-part-menu h2{
+    padding-left: 118px;
+    padding-top: 2px;   
+    margin-bottom: 37px;
+}
+
+
+
+
+/* start style for section-reviews*/
 
 .reviews{
-    position: relative;
-    margin: 0 auto;
+    display: flex;
     width: 1600px;
     height: 758px;
+    background: url(../images/section-reviews/bg-reviews.jpg) top center no-repeat;
 }
 
 .reviews > article{
-    position: absolute;
-    top: 101px;
-    left: 416px;
+    margin: 101px 0 0 416px;
+    padding: 74.5px 71px 0 71px;
     width: 769px;
     height: 557px;
+    background: url(../images/section-reviews/divider.png) 262px 131px no-repeat;
     background-color: rgba(0, 0, 0, 0.65);
-    /* outline: 1px solid red */
+    position: relative;
 }
 
-
   
-
 .reviews > article > h2{
     font-size: 36px;
-    font-family: "Yeseva One";
+    font-family: "YesevaOne-Regular_v2";
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
-    margin: 74px auto 0 auto;
+    margin: 0 auto 58px auto;
     font-weight: normal;
 }
 
-.reviews > article > img{
-    margin: 15px auto 0 262px;
-}
-
-
 
 blockquote {
+    position: relative;
     font-size: 25px;
-    font-family: "Gentium Book Basic";
+    font-family: "GenBasB";
     color: rgb(221, 224, 223);
     font-weight: normal;
     line-height: 1.813334;
     text-align: center;
-    letter-spacing: 0.55px;
-    word-spacing: 1px;
-    margin-top: 15px;
-    margin-left: 71.5px;
+    word-spacing: 1px; 
     width: 627px;   
-    /* outline: 1px solid red; */
     height: 224px;
-    overflow: hidden;
 }
- 
-blockquote:before {
-    content: "\201C";
+
+blockquote::before{
+    content: "\201C"; /*ковычки для цитаты*/
     font-size: 96px;
     font-family: "Georgia";
     color: rgba(242, 244, 244, 0.471);
     position: absolute;
-    top: 121px;
-    left: 27px;
-
+    top: -55px;
+    left: -44px;
 }
-
+ 
 .reviews article > .place{
-    margin-left: 304.5px;
-    margin-top: 33px;
+    margin: 33px 0 0 231.5px;
     font-size: 18px;
-    font-family: "Lato";
+    font-family: "Lato-Regular";
     font-weight: normal;
     color: rgb(255, 255, 255);
 
 }
 
-
-/* style for section-reservations */
+/* start style for section-reservation */
 
 .reservations{
-    position: relative;
-    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    width: 1600px;
     height: 710px;
+    background: url(../images/section-reservations/bg-pat.png), url(../images/section-reservations/bg-shadow.png);
 }
 
-.reservations > .pic-for-reservations {
-    position: absolute;
-    top: 100px;
-    left: 215px;
+
+.reservations > figure {
+    margin: 100px 0 0 215px;
     display: flex;
     justify-content: space-between;
     width: 570px;
+    height: 507px;  
 }
 
-.reservations > article {
-    position: absolute;
-    top: 105px;
-    right: 250px;
+.reservations > section{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 0 65px;
+}
+
+
+
+
+.reservations > section > article {
+    margin-right: 170px;
     width: 500px;
-    height: 250px;
+    background: url("../images/section-reservations/divider.png") 127px 51px no-repeat;
     overflow: hidden;
 }
 
-.reservations > article > h2{
+.reservations > section > article > h2{
     font-size: 36px;
-    font-family: "Yeseva One";
+    font-family: "YesevaOne-Regular_v2";
     color: rgb(204, 153, 0);
     line-height: 0.667;
     text-align: center;
     font-weight: normal;
+    padding-top: 5px;
+    margin-bottom: 73px;
 }
 
-.reservations > article > img{
-    margin-top: 24px;
-    margin-left: 125px;
-    margin-bottom: 20px;
-}
-
-.reservations > article > p{
+.reservations > section > article > p{
     font-size: 16px;
-    font-family: "Lato";
+    font-family: "Lato-Regular";
     color: rgb(76, 76, 76);
     line-height: 1.5;
     text-align: center; 
     width: 440px;   
-    margin-left: 30px;
-    /* margin-top: 15px; */
+    margin-left: 33.5px;
 }
   
-.reservations > article > .lower-paragraph {
-    margin-top: 10px;
-    margin-left: 36px;   
+.reservations > section > article > .lower-paragraph {
+    margin: 10px 0 0 36px;  
     line-height: 1.55;
     width: 430px;
 }
 
-.booking-form{
-    position: absolute;
-    top: 395px;
-    right: 156px;
-    width: 600px;
-}
-
-.booking-form  .date::-webkit-calendar-picker-indicator {
+form .date::-webkit-calendar-picker-indicator {
     color: rgba(0,0,0,0);
     opacity: 0;    
 }
 
-.booking-form  input::-webkit-inner-spin-button,
-.booking-form input::-webkit-clear-button {
+form  input::-webkit-inner-spin-button,
+form input::-webkit-clear-button {
   display: none; 
 }
 
-.booking-form  .date::-webkit-calendar-picker-indicator:hover {
+form .date::-webkit-calendar-picker-indicator:hover {
     background: transparent;
     cursor: pointer;
-  }
-
-.booking-form > ul{
-    padding: 0;
-    list-style-type: none;
 }
 
-.booking-form > .left-ul {
+
+
+form  section:first-child {
     float: left;
-    margin-left: 40.5px;
 }
 
-.booking-form > .right-ul {
-    float: right;
-    margin-right: 129px;
+form section:nth-child(2){
+    float:  right;
 }
 
 
-.booking-form > ul label{
-    padding: 0;
-    font-size: 14px;
-    font-family: "Open Sans";
-    color: rgb(201, 161, 49);
-    font-weight: bold;
-    line-height: 1.2;
-    letter-spacing: 0.5px;
-    display: inline-block;
-}
 
-.lower-label{
-    margin-top: 18px;
-}
 
-.booking-form > ul li {
-    margin-bottom: 6px;
-    /* margin-top: 20px; */
-}
 
 :-moz-placeholder {
     padding-left: 14px;
     font-size: 16px;
-    font-family: "Open Sans";
+    font-family: "open-sans.regular";
     color: rgb(124, 124, 124);
     font-style: italic;
     line-height: 1.2;
@@ -740,141 +589,137 @@ blockquote:before {
 ::-webkit-input-placeholder {
     
     font-size: 16px;
-    font-family: "Open Sans";
+    font-family: "open-sans.regular";
     color: rgb(124, 124, 124);
     font-style: italic;
     line-height: 1.2;
     text-align: left;
     padding-left: 14px;
     word-spacing: -0.5px;
-    /* margin-left: 15px; */
 }
 
 *:focus {
     outline: none;
 }
 
-.booking-form input{
-    border: 1px solid rgb(200,198,198);
-    height: 36px;
-    width: 200px;
-    
-}
+form { 
+    width: 427px; 
+    margin: 37.5px 0 0 37px;
+    height: 220px; 
+} 
 
-.booking-form ul .party-number{
+form div label { 
+    display: block; 
+    width: 200px; 
+    font-family: "open-sans.bold"; 
+    font-size: 14px; 
+    color: #c9a131; 
+} 
+
+form div input { 
+    display: block; 
+    height: 36px; 
+    width: 200px; 
+    margin: 5px 0 2.5px 0;
+    background: rgba(255, 255, 255, 0.4); 
+} 
+
+form div label input { 
+    border: 1px solid #c8c6c6; 
+} 
+
+form div input:focus { 
+    border-color: #c9a131; 
+} 
+
+
+
+form .party-number{
     background-image: url(../images/section-reservations/arrow.png);
     background-repeat: no-repeat;
     background-position: 176px 12.5px;
 }
 
-.booking-form ul .date {
+form .date {
     background-image: url(../images/section-reservations/calendar.png);
     background-repeat: no-repeat;
     background-position: 174px 7px;
 }
 
-.booking-form ul input{
-    background: rgba(255, 255, 255, 0.4); 
-}
-.booking-form input:focus{
-    border: 1px solid rgb(200, 159, 45);
-}
 
-.booking-form .button { 
-    margin: 26px auto 0 157px; 
-    font-family: "OpenSans";
+
+form .button { 
+    height: 36px; 
+    width: 200px; 
+    margin: 31px auto 0 113px; 
+    font-family: "open-sans.regular";
     background: rgb(200, 159, 45); 
     color: rgb(255,255,255); 
     font-size: 17px;
-    word-spacing: 2.4px;
+    word-spacing: -2px;
 }
-  
-  
 
-  /* Style for footer */
+
+/* start style for footer */
 
 footer{
     margin: 0 auto;
-    position: relative;
-}
-
-footer .about-us, footer .opening-hours, footer .location {
+    width: 1600px;
+    height: 320px;
     overflow: hidden;
+    background: url(../images/footer/bg-footer.jpg);
 }
 
-footer > .about-us{
-    position: absolute;
-    top: 57px;
-    left: 215px;
-    height: 200px;
+footer > section{
+    height: 250px;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 57px 0 0 215px;
+}
+
+footer > section > section {
+    background: url("../images/footer/divider.png") 85px 40px no-repeat;
     width: 370px;
+    height: 200px; 
 }
 
 footer h2{
     font-size: 21px;
-    font-family: "Yeseva One";
+    font-family: "YesevaOne-Regular_v2";
     color: rgb(254, 254, 254);
     line-height: 1.143;
-    text-align: center;      
+    text-align: center;   
+    font-weight: normal;  
+    margin-bottom: 53px; 
 }
 
-footer .footer-divider{
-    margin-left: 84px;
-    margin-top: 16px;
-    margin-bottom: 14px;
-}
 
 footer p{
     text-align: center;
     font-size: 16px; 
     color: rgb(254, 254, 254);
-    font-family: "Open Sans";
+    font-family: "open-sans.regular";
     text-align: center; 
     line-height: 24px; 
 }
 
-footer > .opening-hours{
-    position: absolute;
-    top: 57px;
-    left: 615px;
-    height: 200px;
-    width: 370px;
-}
 
-.opening-hours > p{
-    letter-spacing: -0.15px;
-    word-spacing: 2px;
+footer i{
+    color: rgb(254, 254, 254);
+    margin-left: 8.5px;
 }
 
 .opening-hours ul{
-    margin-top: 50px;
-    margin-left: 80px;
-}
-
-footer  i{
-    color: rgb(254, 254, 254);
-    margin-left: 9px;
-}
-
-.location h2{
-    letter-spacing: 1px;
-}
-
-.opening-hours p{
-    letter-spacing: 0.15px;
-}
-
-footer .location {
-    position: absolute;
-    top: 57px;
-    height: 200px;
-    left: 1018px;
-    width: 370px;
+    margin: 50px 0 0 120px;
 }
 
 .location ul{
-    margin-top: 50px;
-    margin-left: 92px; 
+    margin: 50px 0 0 138px;
+}
+
+footer span{
+    font-weight: bold;
 }
 
 .location p{
@@ -882,3 +727,6 @@ footer .location {
     word-spacing: 0.9px;
 }
 
+.opening-hours p{
+    letter-spacing: 0.15px;
+}

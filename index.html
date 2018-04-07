@@ -12,57 +12,49 @@
 <body>
     <div class="wrapper">
         <header>
-            <img src="images/header/gradient.png" class="gradient-picture" alt="gradient">
-            <a href="#" class="logo"><img src="images/header/logo.png" alt="logo"></a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Igredients</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Reservations</a></li>
-                </ul>
-                <ul class="social-icons"> 
-                    <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li> 
-                    <li><a href="#" class="fa fa-youtube" aria-hidden="true"></a></li> 
-                    <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li> 
-                </ul>  
-            </nav>
+            <section class="clearfix">
+                <a href="#" class="logo" >
+                    <img src="images/header/logo.png" alt="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Igredients</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Reservations</a></li>
+                    </ul>
+                    <ul > 
+                        <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li> 
+                        <li><a href="#" class="fa fa-youtube" aria-hidden="true"></a></li> 
+                        <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li> 
+                    </ul>  
+                </nav>
+            </section>              
+            <section class="promo">
+                <h1>the right ingredients for the right food</h1>
+                <a href="#" class="button-book-a-table" >BOOK A TABLE</a> 
+                <a href="#" class="button-see-the-menu" >SEE THE MENU</a>
+            </section>
         </header>
         <main>
-            <section class="promo">
-                <img class="bg-pasta" src="images/section-promo/bg-header.jpg" alt="pasta" >
-                <h1>the right ingredients for the right food</h1>
-                <img src="images/section-promo/divider.png" class="divider" alt="divider">
-                <a href="#" ><section class="button-book-a-table">
-                    <span>BOOK A TABLE</span>
-                </section></a> 
-                <a href="#" ><section class="button-see-the-menu">
-                    <span>SEE THE MENU</span>  
-                </section></a>
-            </section>
             <section class="about">
-                <img src="images/section-about/bg-plus-pattern.png" alt="bg-about">
-                <article>
+                <article class="clearfix">
                     <h2>Just the right food</h2>
-                    <img class="divider-about" src="images/section-about/divider.png" alt="divider">
                     <p>If you’ve been to one of our restaurants, you’ve seen – and
                         tasted – what keeps our customers coming back for more.
                         Perfect materials and freshly baked food, delicious Lambda
                         cakes, &nbspmuffins, and gourmet coffees make us hard to resist!
                         Stop in today and check us out!</p>
-         
+                    <img src="images/section-about/cook.png" alt="cooker">
                 </article>
-                <img class="cook" src="images/section-about/cook.png" alt="cooker">
-                <img class="food" src="images/section-about/dish.png" alt="dish">
+                
+                <img src="images/section-about/dish.png" alt="dish">
             </section>
             <section class="ingredients">
-                <img src="images/section-ingredients/bg-section-ingredients.jpg" alt="ingredients">
-                <img src="" alt="">
                 <article>
                     <h2>Fine ingredients</h2>
-                    <img class="divider-ingredietns" src="images/section-ingredients/divider.png" alt="divider">
                     <p>
                         If you’ve been to one of our restaurants, you’ve seen – and 
                         tasted – what keeps our customers coming back for more. 
@@ -70,202 +62,159 @@
                         cakes, &nbspmuffins, and gourmet coffees make us hard to resist! 
                         Stop in today and check us out!
                     </p>
-                    <section class="images-for-article">
+                    <figure>
                         <p class="wheat"><img class="wheat" src="images/section-ingredients/wheat.jpg" alt="wheat"></p>
                         <p class="paper"><img class="paper" src="images/section-ingredients/paper.jpg" alt="paper"></p>
                         <p class="bread"><img class="bread" src="images/section-ingredients/bread.jpg" alt="bread"></p>
-                    </section>
+                    </figure>
                 </article>
             </section>
             <section class="menu">
-                <img src="images/section-menu/bg-menu.jpg" alt="bg-menu">
                 <section class="content-menu">
-                    <section class="left-side-menu">
-                        <img class="special" src="images/section-menu/border-for-special-delicious.png" alt="special-food">
+                    <section>
                         <section class="upper-part-menu">
                             <h2>Appetisers</h2>
-                            <img src="images/section-menu/divider.png" alt="divider">
-                            <section class="space-between-points point-of-menu-one">
+                            <section class="space-between-points">
                                 <h3>Tzatsiki <span class="prices">$3.99</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
                             </section>
-                            <section class="space-between-points point-of-menu-two">
+                            <section class="space-between-points">
                                 <h3>Aubergine Salad <span class="prices">$5.50</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
                             </section>
-                            <section class="space-between-points point-of-menu-three">
-                                    <h3>Aubergine Salad <span class="prices">$5.25</span></h3>
-                                    <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
-                                    <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <section class="space-between-points">
+                                <h3>Aubergine Salad <span class="prices">$5.25</span></h3>
+                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
                             </section>                            
                         </section>
                         <section class="lower-part-menu">
                             <h2>Salads</h2>
-                            <img src="images/section-menu/divider.png" alt="divider">
-                            <section class="space-between-points point-of-menu-one">
+                            <section class="space-between-points">
                                 <h3>Olive Special <span class="prices">$5.99</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
                             </section>
-                            <section class="space-between-points point-of-menu-two">
+                            <section class="space-between-points">
                                 <h3>Greek Salad <span class="prices">$5.50</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
                             </section>
-                            <section class="space-between-points point-of-menu-three">
+                            <section class="space-between-points">
                                 <h3>Gusto Salad <span class="prices">$5.25</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
                             </section>                            
                         </section>
                     </section>
-                    
-                    <section class="right-side-menu">
-                        <img class="special" src="images/section-menu/border-for-special-delicious.png" alt="special-food">
+                    <section>
                         <section class="upper-part-menu">
                             <h2>Starters</h2>
-                            <img src="images/section-menu/divider.png" alt="divider">
-                            <section class="space-between-points point-of-menu-one">
+                            <section class="space-between-points">
                                 <h3>Haloumi <span class="prices">$3.99</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
                             </section>
-                            <section class="space-between-points point-of-menu-two">
+                            <section class="space-between-points">
                                 <h3>Spinach Pie <span class="prices">$5.50</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
                             </section>                         
                         </section>
                         <section class="lower-part-menu">
                             <h2>Main Dishes</h2>
-                            <img src="images/section-menu/divider.png" alt="divider">
-                            <section class="space-between-points point-of-menu-one">
+                            <section class="space-between-points">
                                 <h3>Cornish Mackerel <span class="prices">$5.99</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
                             </section>
-                            <section class="space-between-points point-of-menu-two">
+                            <section class="space-between-points">
                                 <h3>Roast Lamb <span class="prices">$5.50</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
                             </section>
-                            <section class="space-between-points point-of-menu-three">
+                            <section class="space-between-points">
                                 <h3>Fried Chicken <span class="prices">$5.25</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
                             </section>
-                            <section class="space-between-points point-of-menu-four">
+                            <section class="space-between-points">
                                 <h3>Pastitsio <span class="prices">$5.99</span></h3>
-                                <img class="line" src="images/section-menu/line-between-delicious.png" alt="line">
                                 <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
                             </section>   
-                                                                                                                       
                         </section>
                     </section>
                 </section>
                 
             </section>
             <section class="reviews">
-                <img src="images/section-reviews/bg-reviews.jpg" alt="bg-reviews">
                 <article>
                     <h2>Guest Reviews</h2>
-                    <img src="images/section-reviews/divider.png" alt="divider">                    
-                    <blockquote><p>If you’ve been to one of our restaurants, you’ve seen – 
+                    <blockquote>If you’ve been to one of our restaurants, you’ve seen – 
                     and tasted – what keeps our customers coming back for 
                     more. Perfect materials and freshly baked food, 
                     delicious Lambda cakes, &nbspmuffins, and gourmet coffees 
-                    make us hard to resist! Stop in today and check us out!</p></blockquote> 
+                    make us hard to resist! Stop in today and check us out!</blockquote> 
                     <p class="place">- food inc, New York </p>         
                 </article>
             </section>
             <section class="reservations">
-                <img src="images/section-reservations/bg-reservations.jpg" alt="bg-reservations">
-                <section class="pic-for-reservations">
+                <figure>
                     <img src="images/section-reservations/pic-food.jpg" alt="meat">
                     <img src="images/section-reservations/cherry-delicious.jpg" alt="chery">
-                </section>
-                <article>
-                    <h2>Just the right food</h2>
-                    <img src="images/section-reservations/divider.png" alt="divider">
-                    <p>If you’ve been to one of our restaurants, you’ve seen – and 
-                        tasted – what keeps our customers coming back for more. 
-                        Perfect materials and freshly baked food.</p>
-                    <p class="lower-paragraph">Delicious Lambda cakes, &nbspmuffins, and gourmet coffees make 
-                        us hard to resist! Stop in today and check us out! Perfect 
-                        materials and freshly baked food.</p>
-                </article>
-                <form action="" class="booking-form">
-                    <ul class="left-ul">
-                        <li>
-                            <label for="name">Name</label>
-                        </li>
-                        <li>
-                            <input type="text" name="name" placeholder="your name *" required>
-                        </li>
-                        <li>
-                            <label class="lower-label" for="date">Date</label>
-                        </li>
-                        <li>
-                            <!-- <i class="fa fa-calendar" aria-hidden="true"></i> -->
-                            <input placeholder="date *" class="date"  type="text" onfocus="(this.type='date')" name="date" required>
-                        </li>
-                    </ul>
-                    <ul class="right-ul">
-                        <li>
-                            <label for="email">Email</label>
-                        </li>
-                        <li>
-                            <input type="email" name="email" placeholder="your email *" required>
-                        </li>
-                        <li>
-                            <label class="lower-label" for="party">Party number</label>
-                        </li>
-                        <li>
-                            <input class="party-number" type="number" name="party" placeholder="party number" min="1" max="20">
-                        </li>
-                    </ul>
-                    <input type="submit" value="Book now!" class="button">
-                </form>
+                </figure>
+                <section>
+                    <article>
+                        <h2>Just the right food</h2>
+                        <p>If you’ve been to one of our restaurants, you’ve seen – and 
+                            tasted – what keeps our customers coming back for more. 
+                            Perfect materials and freshly baked food.</p>
+                        <p class="lower-paragraph">Delicious Lambda cakes, &nbspmuffins, and gourmet coffees make 
+                            us hard to resist! Stop in today and check us out! Perfect 
+                            materials and freshly baked food.</p>
+                    </article>
+                    <form>
+                        <div class="clearfix">
+                            <section>
+                                <label class="name">Name<input type="text" placeholder="your name *" required></label></br> 
+                                <label >Date<input class="date" type="text" name="user-date" placeholder="date *" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required></label> 
+                            </section>
+                            <section>
+                                <label class="email">Email<input type="email" placeholder="your email *" required></label></br> 
+                                <label >Party number<input class="party-number" type="number" placeholder="party number" min="1" max="25"></label>       
+                            </section>
+                        </div>
+                         <input type="submit" value="Book now!" class="button">
+                    </form>
+                </section>    
             </section>
         </main>
     </div> 
     <footer>
-        <img src="images/footer/bg-footer.jpg" alt="bg-footer">
-        <section class="about-us">
-            <h2>About Us</h2>
-            <img class="footer-divider" src="images/footer/divider.png" alt="divider">
-            <p>
-                Lambda's new and expanded Chelsea location 
-                represents a truly authentic <b>Greek</b> patisserie, featuring 
-                breakfasts of fresh croissants and steaming bowls of café.
-            </p>
-            <p>Lamda the best restaurant in town</p>    
-        </section>
-        <section class="opening-hours">
-            <h2>Opening Hours</h2>
-            <img class="footer-divider" src="images/footer/divider.png" alt="divider">
-            <p><b>Mon-Thu:</b> 7:00am-8:00pm</p>
-            <p><b>Fri-Sun:</b> 7:00am-10:00pm</p>  
-            <ul class="card"> 
-                <i class="fa fa-cc-amex" aria-hidden="true"></i>
-                <i class="fa fa-cc-paypal" aria-hidden="true"></i> 
-                <i class="fa fa-cc-visa" aria-hidden="true"></i> 
-                <i class="fa fa-cc-discover" aria-hidden="true"></i> 
-            </ul> 
-        </section>
-        <section class="location">
-            <h2>Our location</h2>
-            <img class="footer-divider" src="images/footer/divider.png" alt="divider">
-            <p><b>19th Paradise Street Sitia</b></p>
-            <p><b>128 Meserole Avenue</b></p>  
-            <ul class="icons"> 
-                <i class="fa fa-facebook" aria-hidden="true"></i> 
-                <i class="fa fa-youtube" aria-hidden="true"></i> 
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-trello" aria-hidden="true"></i>
-            </ul> 
+        <!-- <img src="images/footer/bg-footer.jpg" alt="bg-footer"> -->
+        <section>
+            <section class="about-us">
+                <h2>About Us</h2>
+                <p>
+                    Lambda's new and expanded Chelsea location 
+                    represents a truly authentic <span>Greek</span> patisserie, featuring 
+                    breakfasts of fresh croissants and steaming bowls of café.
+                </p>
+                <p>Lamda the best restaurant in town</p>    
+            </section>
+            <section class="opening-hours">
+                <h2>Opening Hours</h2>
+                <p><span>Mon-Thu:</span>7:00am-8:00pm</p>
+                <p><span>Fri-Sun:</span> 7:00am-10:00pm</p>  
+                <ul class="card"> 
+                    <i class="fa fa-cc-amex" aria-hidden="true"></i>
+                    <i class="fa fa-cc-paypal" aria-hidden="true"></i> 
+                    <i class="fa fa-cc-visa" aria-hidden="true"></i> 
+                    <i class="fa fa-cc-discover" aria-hidden="true"></i> 
+                </ul> 
+            </section>
+            <section class="location">
+                <h2>Our location</h2>
+                <p><span>19th Paradise Street Sitia</span></p>
+                <p><span>128 Meserole Avenue</span></p>  
+                <ul class="icons"> 
+                    <i class="fa fa-facebook" aria-hidden="true"></i> 
+                    <i class="fa fa-youtube" aria-hidden="true"></i> 
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-trello" aria-hidden="true"></i>
+                </ul> 
+            </section>
         </section>
     </footer>   
 </body>
